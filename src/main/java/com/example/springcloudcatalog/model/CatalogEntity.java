@@ -30,9 +30,9 @@ public class CatalogEntity implements Serializable {
     @Column(nullable = false)
     private String productName;
     @Column(nullable = false)
-    private int stock;
+    private Integer stock;
     @Column(nullable = false)
-    private int unitPrice;
+    private Integer unitPrice;
 
     @Column(nullable = false, updatable = false, insertable = false)
     @ColumnDefault(value = "CURRENT_TIMESTAMP")

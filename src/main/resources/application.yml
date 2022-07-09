@@ -2,6 +2,9 @@ server:
   port: 0
 
 spring:
+  profiles:
+    active: 
+      - dev
   application:
     name: catalog-service
   h2:
@@ -15,10 +18,10 @@ spring:
       ddl-auto: create-drop
     show-sql: true
     generate-ddl: true
+    defer-datasource-initialization: true
   datasource:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:testdb
-    username: sa
     
 
 eureka:
@@ -28,4 +31,4 @@ eureka:
 
 logging:
   level:
-    com.example.catalogservice: DEBUG
+    com.example.springcloudcatalog: DEBUG

@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.modelmapper.ModelMapper;
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.kafka.annotation.KafkaListeners;
 import org.springframework.stereotype.Service;
 
 import com.example.springcloudcatalog.controller.ResponseCatalog;
